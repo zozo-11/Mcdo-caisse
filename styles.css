@@ -1,0 +1,49 @@
+/* mobile-first, full-screen buttons + footer version */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { font-family: Arial, sans-serif; }
+
+.mode-selection {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.mode-selection button {
+  flex: 1;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background .3s;
+}
+.mode-selection button:nth-child(1) { background: #DA291C; }
+.mode-selection button:nth-child(1):hover { background: #b21e18; }
+.mode-selection button:nth-child(2) { background: #FFC600; color: #333; }
+.mode-selection button:nth-child(2):hover { background: #e6b800; }
+.mode-selection button:nth-child(3) { background: #DA291C; }
+.mode-selection button:nth-child(3):hover { background: #b21e18; }
+
+.mode-selection footer {
+  text-align: center;
+  padding: 0.5rem;
+  background: #333;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* common page wrapper */
+.page {
+  padding: 1rem;
+}
+.page header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #DA291C;
+}
+.page footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
